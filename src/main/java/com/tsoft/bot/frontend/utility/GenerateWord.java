@@ -61,7 +61,7 @@ public class GenerateWord {
             run.addPicture(insertTemplate, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(440), Units.toEMU(740));
             run.addBreak();
         } catch (Exception e) {
-            e.printStackTrace();
+            Logger.getLogger("Shows: "+e);
         }finally {
             if (insertTemplate != null) insertTemplate.close();
         }
@@ -136,7 +136,7 @@ public class GenerateWord {
 
         } catch (Exception e) {
 
-            e.printStackTrace();
+            Logger.getLogger("Shows: "+e);
 
         }finally {
 
@@ -185,10 +185,10 @@ public class GenerateWord {
             fileOutputStream.close();
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            Logger.getLogger("Shows: "+e);
         }
         finally {
-            System.out.println("");
+            System.out.println("Finally");
         }
         System.out.println("[LOG] Word cerrado");
     }
