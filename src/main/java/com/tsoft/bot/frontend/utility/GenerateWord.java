@@ -179,7 +179,7 @@ public class GenerateWord {
             File file = new File(FileHelper.getProjectFolder() + "/Evidencia.docx");
 
             if (file.exists()) {
-                return();
+                return;
             }
 
             fileOutputStream.close();
